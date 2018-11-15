@@ -7,36 +7,12 @@
 int main(void)
 
 {
-int nb,point=0;
-
-nb = LancerDe ();
-
-while (!nb==1)
-{
-	if (nb==2*nb)
+short résultat, i=0;
+	while(i<10)
 	{
-		point=point+nb;
+        resulat = 
+ LancerDe  ();
+	i++;
 	}
-	
-	else if(nb==3)
-	{
-		point=point*2;
-	}
-	
-	else if(nb==5)
-	{
-		if(point>=2)
-		{
-			point=point-2;
-		}
-		else
-		{
-		point=0;
-			
-		}
-	
-	}
-		
-}
     return 0;
 }
