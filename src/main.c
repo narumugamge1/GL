@@ -1,41 +1,41 @@
-//1.
+//  Copyright (c) 2018 Antoine Tran Tan
+//
+
 #include "my_header.h"
-#include "stdlib.h"
+#include "TP_lib.h"
 
 int main(void)
+
 {
-unsigned long int n=0,S1=0,r,S2=0;S3=0,S4=0;
-unisgned short int m=0,i=0,a=0,b=0,p=0;
-	while(n<146)
+int nb,point=0;
+
+nb = LancerDe ();//nb c'est le lancer de dés
+
+while (!nb==1)//il n'obtient pas de 1
+{
+	if (nb==2*nb)// si nb est pariun nombre pair
 	{
-		S1=S1+n;
-		n=n+3;
+		point=point+nb;//il augmentye ses points du chiffre obtenue
 	}
-	while(n2<9876)
+	
+	else if(nb==3)//si le nombre vaut 3
 	{
-		S2=S2+M;
-		m=m+3;
+		point=point*2;//les points sont multipliés par 2
 	}
-	while(i<13)
+	
+	else if(nb==5)// et si le nombre vaut 5
 	{
-		r=(rand()%10)+1;
-		S3=S3+r;
-		i=i+1;
-	}
-	while(p<21)
-	{
-		if(a%3==0||b%7==0)
+		if(point>=2) //si les point sont au dessus de 0
 		{
-			S4=S4+a;
-			p=p+1;
-			a=a+1;
-			b=b+1;
+			point=point-2;// il perd deux points
 		}
 		else
 		{
-			a=a+1;
-			b=b+1;
+		point=0//fin du tour
+			
 		}
+	
 	}
-	return 0;
+}		
+	return 0;//retour d'une valeur
 }
