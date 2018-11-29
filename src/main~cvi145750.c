@@ -12,7 +12,7 @@ unsigned char joueur[6]={35,45,23,15,3,27};
 unsigned char gagnante[6]={0,0,0,0,0,0};
     
 
-	for(tour=0;tour<1000000000000000000;tour++)
+	for(tour=0;tour<100;tour++)
 	{	
 		initialiserTirage(); 
 		for(i=0;i<6;i++)					   
